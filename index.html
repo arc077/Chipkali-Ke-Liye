@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#120e2a">
+<title>For My Sister ♡</title>
+<style>
+:root{--ink:#fff8ff;--muted:#d9cce9;--pink:#ff5ca8;--pink2:#ff9acb;--violet:#9b7bff;--glass:rgba(255,255,255,.085);--line:rgba(255,255,255,.16)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:#100d24;color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 20%,#54225e 0,transparent 35%),radial-gradient(ellipse at 90% 75%,#24245f 0,transparent 38%),linear-gradient(145deg,#100d24,#21133c 55%,#11182d)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;pointer-events:none;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#ffacd8 1px,transparent 1px);background-size:75px 75px,113px 113px;background-position:0 0,34px 45px;animation:stars 35s linear infinite}
+@keyframes stars{to{background-position:300px 500px,-200px 300px}}@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes glow{0%,100%{box-shadow:0 0 18px #ff5ca833}50%{box-shadow:0 0 32px #ff5ca877}}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}@keyframes pop{0%{transform:scale(.5);opacity:0}75%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,5vw,56px);background:rgba(16,13,36,.7);backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--pink),var(--violet));box-shadow:0 0 22px #ff5ca844;font-size:20px}
+.nav{display:flex;gap:6px;align-items:center}.nav button{border:0;background:transparent;color:var(--muted);padding:9px 12px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer;transition:.25s}.nav button:hover,.nav button.active{color:white;background:#ffffff13}.nav button.active{box-shadow:inset 0 0 0 1px #ff9acb55}
+.menu{display:none;background:transparent;color:white;border:1px solid var(--line);border-radius:12px;padding:8px 11px;font-size:20px}
+main{max-width:1100px;margin:auto;padding:clamp(18px,4vw,42px) clamp(14px,4vw,32px) 44px}
+.page{display:none;min-height:70vh;animation:rise .55s ease both}.page.active{display:flex;flex-direction:column;justify-content:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#ffc3e0;background:#ff73b016;border:1px solid #ff8acb40;border-radius:999px;padding:8px 13px;font-size:12px;letter-spacing:1.3px;text-transform:uppercase;font-weight:800}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}.hero h1{font-size:clamp(44px,7.4vw,82px);line-height:.99;letter-spacing:-3px;margin:20px 0 18px}.gradient{background:linear-gradient(110deg,#fff,#ffb0d5 45%,#b8a4ff);color:transparent;background-clip:text}.hero p,.sub{font-size:clamp(15px,2vw,18px);line-height:1.75;color:var(--muted);max-width:580px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:16px;padding:13px 19px;color:white;font:inherit;font-weight:800;cursor:pointer;text-decoration:none;background:linear-gradient(110deg,#ff4e9b,#ad76ff);box-shadow:0 8px 26px #ff4e9b30;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 32px #ff4e9b50}.btn.secondary{background:#ffffff0c;border:1px solid var(--line);box-shadow:none;color:#f9eaff}.btn.small{padding:10px 14px;font-size:13px;border-radius:12px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.art{position:relative;display:grid;place-items:center;min-height:330px}.orb{width:min(330px,75vw);aspect-ratio:1;border-radius:48% 52% 55% 45%;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,#ffbddf,#a877ff 48%,#4b2c83 75%);box-shadow:inset -15px -20px 50px #120b35aa,0 0 80px #a877ff30;animation:float 5s ease-in-out infinite;position:relative}.orb:before,.orb:after{content:"";position:absolute;border:1px solid #ffffff55;border-radius:50%;inset:-20px;transform:rotate(-20deg) scaleY(.34)}.orb:after{inset:-44px;transform:rotate(55deg) scaleY(.42);border-color:#ff9acb55}.orb-emoji{font-size:clamp(95px,15vw,150px);filter:drop-shadow(0 12px 18px #37134d88);animation:pulse 3.8s infinite}.float-tag{position:absolute;padding:11px 15px;border:1px solid #ffffff26;border-radius:14px;background:#201736dd;box-shadow:0 10px 35px #0003;font-size:13px;animation:float 4s ease-in-out infinite}.tag-one{top:18%;left:0}.tag-two{right:-1%;bottom:17%;animation-delay:-1.4s}.tiny{font-size:12px;color:#cbb9dd;margin-top:20px}
+.section-head{text-align:center;margin:0 auto 30px;max-width:700px}.section-head h2{font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-1.5px;margin:16px 0 12px}.section-head p{color:var(--muted);line-height:1.7;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{position:relative;padding:22px;border-radius:23px;border:1px solid var(--line);background:linear-gradient(145deg,#ffffff13,#ffffff06);box-shadow:0 16px 40px #08061522;overflow:hidden;transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-5px);border-color:#ff9acb70}.card .emoji{font-size:30px;display:inline-block;margin-bottom:13px}.card h3{margin:0 0 8px;font-size:18px}.card p{color:var(--muted);font-size:14px;line-height:1.65;margin:0}.card:after{content:"";position:absolute;width:100px;height:100px;right:-50px;top:-50px;border-radius:50%;background:#ff6aa414}
+.moment-num{font-size:11px;letter-spacing:1.5px;color:#ffb5d9;font-weight:900;margin-bottom:10px}.quote{font-size:15px!important;color:#fff0f8!important;margin-top:12px!important}
+.love-list{max-width:790px;margin:0 auto;display:grid;gap:12px;width:100%}.love-row{display:flex;align-items:center;gap:16px;padding:17px 20px;border-radius:18px;background:#ffffff0b;border:1px solid #ffffff17;transition:.2s}.love-row:hover{background:#ff83bf12;transform:translateX(4px)}.love-icon{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(135deg,#ff79b52c,#a38aff30);font-size:23px}.love-row strong{display:block;margin-bottom:4px}.love-row span{font-size:13px;color:var(--muted);line-height:1.5}
+.challenge-wrap{max-width:760px;margin:auto;width:100%}.challenge{padding:22px;border:1px solid var(--line);background:#ffffff0b;border-radius:22px;margin:13px 0}.challenge h3{margin:0 0 14px;font-size:16px}.options{display:flex;gap:9px;flex-wrap:wrap}.option{border:1px solid #ffffff20;color:#f9eaff;background:#ffffff08;border-radius:12px;padding:10px 13px;cursor:pointer;font:inherit;font-size:13px;transition:.2s}.option:hover{border-color:#ff9acb}.option.selected{background:#ff5ca833;border-color:#ff8acb;color:white;box-shadow:0 0 15px #ff5ca822}.result{display:none;padding:20px;border-radius:18px;margin-top:15px;background:linear-gradient(120deg,#ff5ca822,#9b7bff22);border:1px solid #ff9acb55;line-height:1.7}.result.show{display:block;animation:pop .4s ease}.result strong{color:#ffb0d5}
+.final-card{max-width:760px;margin:0 auto;text-align:center;padding:clamp(25px,5vw,48px);border-radius:30px;border:1px solid #ffffff28;background:linear-gradient(145deg,#ffffff13,#ffffff06);box-shadow:0 20px 80px #0002;position:relative;overflow:hidden}.final-card:before{content:"♡";position:absolute;font-size:220px;color:#ff9acb0b;top:-75px;right:-10px;line-height:1}.final-card .big-heart{font-size:58px;display:inline-block;animation:pulse 2.3s infinite}.final-card h2{font-size:clamp(34px,5vw,56px);margin:12px 0;background:linear-gradient(100deg,#fff,#ffaad4,#c0aaff);color:transparent;background-clip:text}.final-card p{max-width:570px;margin:12px auto;color:var(--muted);line-height:1.85}.signature{font-size:21px;color:#ffb5d9;margin:25px 0 0;font-weight:800}
+.envelope{margin:25px auto 0;width:170px;height:120px;position:relative;cursor:pointer;filter:drop-shadow(0 12px 18px #0004);transition:.3s}.envelope:hover{transform:translateY(-5px) rotate(-2deg)}.env-body{position:absolute;inset:20px 0 0;background:linear-gradient(135deg,#ffb8d9,#ff6cab);border-radius:8px 8px 13px 13px;clip-path:polygon(0 0,50% 45%,100% 0,100% 100%,0 100%)}.env-flap{position:absolute;top:20px;left:0;width:100%;height:65px;background:#ffd4e8;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:.45s;z-index:2}.env-heart{position:absolute;z-index:3;top:55px;left:calc(50% - 15px);font-size:30px;transition:.4s}.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}.envelope.open .env-heart{transform:translateY(-45px) scale(.7)}.envelope-label{font-size:12px;color:#e8d7f4;margin-top:5px}
+footer{border-top:1px solid #ffffff13;padding:22px 16px 30px;text-align:center;color:#a99bbd;font-size:12px}.footer-hearts{color:#ff8fc5;letter-spacing:8px;margin-bottom:8px}
+.progress{height:3px;background:#ffffff0b;position:sticky;top:64px;z-index:9}.progress span{display:block;height:100%;width:20%;background:linear-gradient(90deg,var(--pink),var(--violet));transition:width .35s}
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#241738;border:1px solid #ff9acb66;padding:12px 18px;border-radius:14px;box-shadow:0 10px 40px #0005;z-index:50;font-size:14px;transition:.3s;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}
+.confetti{position:fixed;top:-15px;z-index:60;pointer-events:none;animation:fall linear forwards;font-size:20px}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:12px}.hero .art{grid-row:1;min-height:270px}.orb{width:220px}.tag-one{left:7%}.tag-two{right:6%}.hero h1{letter-spacing:-1.5px}.grid{grid-template-columns:1fr 1fr}.page{min-height:72vh}.nav{display:none;position:absolute;top:65px;left:12px;right:12px;padding:10px;background:#1c1432f5;border:1px solid var(--line);border-radius:18px;flex-direction:column;align-items:stretch;box-shadow:0 15px 35px #0006}.nav.open{display:flex}.nav button{text-align:left;padding:12px}.menu{display:block}.progress{top:64px}}
+@media(max-width:470px){.grid{grid-template-columns:1fr}.card{padding:19px}.hero .art{min-height:245px}.orb{width:195px}.float-tag{font-size:11px;padding:9px 11px}.challenge{padding:17px}.option{padding:9px 10px}.love-row{padding:14px}.love-icon{width:40px;height:40px;flex-basis:40px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">♡</div><span>For My Sister</span></div>
+  <nav class="nav" id="nav">
+    <button class="active" data-go="0">Home</button><button data-go="1">Sibling Chaos</button><button data-go="2">Why You're Loved</button><button data-go="3">Challenges</button><button data-go="4">Final Note</button>
+  </nav>
+  <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+</header>
+<div class="progress"><span id="progress"></span></div>
+<main>
+  <section class="page active" data-page="0">
+    <div class="hero">
+      <div>
+        <span class="eyebrow">✦ classified sibling business ✦</span>
+        <h1>Oye,<br><span class="gradient" id="heroName">Sister</span>! <span style="color:#ff82bd">♡</span></h1>
+        <p>Tere liye website banayi hai. 40% pyaar, 60% teri beizzati — kyunki ghar mein tujhe roast karne ka copyright sirf mera hai. 😌</p>
+        <div class="hero-actions"><button class="btn" id="openSurprise">Apni beizzati khol ↗ <span>↗</span></button><button class="btn secondary" id="rename">✎ Change your name</button></div>
+        <div class="tiny">⚠️ Warning: zyada attitude dikhaya toh next page pe aur roast milega.</div>
+      </div>
+      <div class="art"><div class="orb"><div class="orb-emoji">🫶🏻</div></div><div class="float-tag tag-one">official chaos partner ✨</div><div class="float-tag tag-two">annoying you since forever 💗</div></div>
+    </div>
+  </section>
+  <section class="page" data-page="1">
+    <div class="section-head"><span class="eyebrow">chapter 01 · sibling lore</span><h2>Our <span class="gradient">greatest hits</span> 😂</h2><p>Sibling life = free ka drama, bina script ka sitcom, aur har baat pe tera overacting award.</p></div>
+    <div class="grid">
+      <article class="card"><div class="moment-num">01 / CLASSIC</div><span class="emoji">🍟</span><h3>Mera haq ka snack</h3><p>Tu: “Mujhe bhookh nahi hai.” Tu 4 second baad: meri plate mein muh. Wah re nautanki.</p><p class="quote">— Isse kehte hain family loot scheme.</p></article>
+      <article class="card"><div class="moment-num">02 / DAILY</div><span class="emoji">🔊</span><h3>Chillana pro max</h3><p>Height chhoti, awaaz full tower speaker. Ghar mein tujhe dhoondhna ho toh bas ek baar naam le lo—location mil jaati hai.</p><p class="quote">— Compact size, surround sound.</p></article>
+      <article class="card"><div class="moment-num">03 / DRAMA</div><span class="emoji">🎭</span><h3>Attitude ki height</h3><p>Asli height meri se kam, par ego Burj Khalifa se bhi upar. Itna attitude kis baat ka, madam? Ceiling fan tak toh main pahunch jaata hoon. 😭</p><p class="quote">— Height: loading… attitude: 4K.</p></article>
+      <article class="card"><div class="moment-num">04 / MYSTERY</div><span class="emoji">🍟</span><h3>Snack chor</h3><p>Khud bolegi “mujhe nahi chahiye” aur phir meri plate saaf. Height badhane ke liye kha rahi hai kya? Result toh abhi pending hai. 💀</p><p class="quote">— Calories gayab, height still missing.</p></article>
+      <article class="card"><div class="moment-num">05 / TALENT</div><span class="emoji">👀</span><h3>Chhoti packet, bada dhamaka</h3><p>Size mini, reaction maxi. Ek normal si baat pe aise gussa hoti hai jaise maine uska poora kingdom chura liya.</p><p class="quote">— Pocket-size volcano. 🌋</p></article>
+      <article class="card"><div class="moment-num">06 / SECRET</div><span class="emoji">🤝</span><h3>Height difference, same drama</h3><p>Photo mein saath khade hote hi lagta hai main tera bhai nahi, height comparison ka reference chart hoon. Par tension mat le, crop kar denge. 😂</p><p class="quote">— Sibling bond: strong. Height gap: visible.</p></article>
+    </div>
+    <div style="text-align:center;margin-top:25px"><button class="btn" data-next>Continue the nonsense →</button></div>
+  </section>
+  <section class="page" data-page="2">
+    <div class="section-head"><span class="eyebrow">chapter 02 · no roasting for 30 seconds</span><h2>Reasons you're <span class="gradient">my person</span> 💗</h2><p>Chal 10 second ke liye roast band. Zyada emotional mat hona, warna screenshot le lunga.</p></div>
+    <div class="love-list">
+      <div class="love-row"><div class="love-icon">🛡️</div><div><strong>Tere side pe hoon (mostly).</strong><span>Height mein chhoti ho, par mere liye important hai. Ladai mein tu galat hoti hai… mostly. Zaroorat pade toh tere saath khada hoon.</span></div></div>
+      <div class="love-row"><div class="love-icon">🌻</div><div><strong>Drama bhi, entertainment bhi.</strong><span>Teri bakbak kabhi-kabhi headache hai, par ghar tere bina boring bhi ho jaata.</span></div></div>
+      <div class="love-row"><div class="love-icon">🧠</div><div><strong>Meri saari pol tere paas hai.</strong><span>Mere cringe moments ki walking hard drive tu hai. Please data leak mat karna.</span></div></div>
+      <div class="love-row"><div class="love-icon">🫶</div><div><strong>Piece ek hi hai tu.</strong><span>Tere jaisi doosri mil bhi gayi toh return policy nahi hogi. Aur snacks share karna seekh le pehle.</span></div></div>
+      <div class="love-row"><div class="love-icon">♾️</div><div><strong>Lifetime subscription: main.</strong><span>Ladai, hasi, secrets aur future ke saare kand — ab bhugatna padega, main tera sibling hoon.</span></div></div>
+    </div>
+    <div style="text-align:center;margin-top:25px"><button class="btn" data-next>Okay, back to being annoying →</button></div>
+  </section>
+  <section class="page" data-page="3">
+    <div class="section-head"><span class="eyebrow">chapter 03 · extremely scientific test</span><h2>Sibling <span class="gradient">compatibility check</span> 🎮</h2><p>Answers honestly dena. Waise bhi tera attitude dekh ke result pehle se pata hai. 😂</p></div>
+    <div class="challenge-wrap">
+      <div class="challenge"><h3>01. Sabse bada headache kaun hai? 😏</h3><div class="options" data-question="q1"><button class="option">Me</button><button class="option">You</button><button class="option">Both of us</button><button class="option">It's a tie</button></div></div>
+      <div class="challenge"><h3>02. Who steals snacks? 🍿</h3><div class="options" data-question="q2"><button class="option">Me</button><button class="option">You</button><button class="option">We share (sometimes)</button></div></div>
+      <div class="challenge"><h3>03. Apne sibling ko kitna jhel sakti ho? 🫶</h3><div class="options" data-question="q3"><button class="option">A little</button><button class="option">A lot</button><button class="option">Don't tell them 😎</button><button class="option">Infinite ♾️</button></div></div>
+      <button class="btn" id="submitQuiz" style="width:100%;margin-top:5px">Sachchai saamne lao ✨</button>
+      <div class="result" id="result"><strong>RESULT: DONO HI NAMOONE 🤡</strong><br><span id="resultText">You're a chaotic, irreplaceable team.</span><br><button class="btn secondary small" id="confettiBtn" style="margin-top:13px">Celebrate anyway 🎉</button></div>
+    </div>
+    <div style="text-align:center;margin-top:20px"><button class="btn secondary" data-next>One last thing →</button></div>
+  </section>
+  <section class="page" data-page="4">
+    <div class="final-card">
+      <div class="big-heart">💖</div><span class="eyebrow">final chapter · from your sibling</span>
+      <h2>Thanks for being <span class="gradient">you.</span></h2>
+      <p>Tu sirf meri behen nahi, meri permanent headache, secret keeper aur partner-in-crime hai. Tujhe tang karna alag baat hai, par tere bina ghar ka scene adhoora hai.</p>
+      <p>Humari ladai hoti rahegi, main tere snacks bhi khaunga, aur tu mujhe drama king bolegi. Par koi aur tujhe tang kare toh pehle uski class lagegi. Family rules. 😤</p>
+      <p>Aisi hi weird reh, thoda attitude kam kar (impossible hai, pata hai), aur khush reh. Main bolta kam hoon, par tere liye hamesha hoon.</p>
+      <div class="signature">Tera forever wala dimaag-khaane-wala sibling ♡</div>
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open secret note"><div class="env-body"></div><div class="env-flap"></div><div class="env-heart">💌</div></div>
+      <div class="envelope-label">Tap the envelope for one last secret</div>
+      <div style="margin-top:24px"><button class="btn" id="finalBtn">You're special. Don't forget it. ♡</button></div>
+    </div>
+  </section>
+</main>
+<footer><div class="footer-hearts">♡ ✦ ♡ ✦ ♡</div>Pyaar se banaya, roast ke saath serve kiya. Return/exchange bilkul nahi. 😎</footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const pages=[...document.querySelectorAll('.page')], nav=document.getElementById('nav'), navBtns=[...document.querySelectorAll('.nav button')], progress=document.getElementById('progress'), toastEl=document.getElementById('toast');
+let current=0, sisterName='Sister', toastTimer;
+function toast(message){toastEl.textContent=message;toastEl.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toastEl.classList.remove('show'),2400)}
+function goTo(index){current=Math.max(0,Math.min(4,index));pages.forEach((p,i)=>p.classList.toggle('active',i===current));navBtns.forEach((b,i)=>b.classList.toggle('active',i===current));progress.style.width=((current+1)*20)+'%';nav.classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});if(current===4) document.title='A little note for '+sisterName+' ♡'}
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>goTo(+b.dataset.go)));
+document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>goTo(current+1)));
+document.getElementById('openSurprise').addEventListener('click',()=>goTo(1));
+document.getElementById('menu').addEventListener('click',()=>nav.classList.toggle('open'));
+document.getElementById('rename').addEventListener('click',()=>{const n=prompt('What do you call your sister? (Name or nickname)',sisterName==='Sister'?'':sisterName);if(n&&n.trim()){sisterName=n.trim().slice(0,28);document.getElementById('heroName').textContent=sisterName;document.querySelector('.brand span').textContent='For '+sisterName;toast('Name updated for '+sisterName+' 💗')}});
+document.querySelectorAll('.options').forEach(group=>group.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>{group.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected')})));
+document.getElementById('submitQuiz').addEventListener('click',()=>{const picked=[...document.querySelectorAll('.options')].map(g=>g.querySelector('.selected')?.textContent);if(picked.some(x=>!x)){toast('Pick one answer in each round first 👀');return}let line=picked[2].includes('Infinite')?'Okay, emotional damage. Love you too. ♾️':picked[0]==='Both of us'?'Two chaos gremlins. One unbreakable team. 🤝':'Official verdict: maximum chaos, maximum love. 💗';document.getElementById('resultText').textContent=`Annoyance: ${picked[0]}. Snack crime: ${picked[1]}. Love level: ${picked[2]}. ${line}`;document.getElementById('result').classList.add('show');confetti(28)});
+function confetti(count=35){const bits=['💗','✨','🎉','♡','⭐','💜'];for(let i=0;i<count;i++){const el=document.createElement('span');el.className='confetti';el.textContent=bits[Math.floor(Math.random()*bits.length)];el.style.left=Math.random()*100+'vw';el.style.animationDuration=(2.2+Math.random()*2.5)+'s';el.style.fontSize=(12+Math.random()*15)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),5000)}}
+document.getElementById('confettiBtn').addEventListener('click',()=>confetti(45));
+const envelope=document.getElementById('envelope');function openEnvelope(){const opened=envelope.classList.toggle('open');toast(opened?'Secret note: Tu irritating hai, par meri favourite irritating insaan bhi. 💌':'Secret note tucked away again ♡');if(opened)confetti(22)}
+envelope.addEventListener('click',openEnvelope);envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openEnvelope()}});
+document.getElementById('finalBtn').addEventListener('click',()=>{confetti(55);toast('Chal ab ek virtual jhappi le, zyada emotional mat ho. 🫂')});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'&&e.target.tagName!=='BUTTON')goTo(current+1);if(e.key==='ArrowLeft'&&e.target.tagName!=='BUTTON')goTo(current-1)});
+</script>
+</body>
+</html>
